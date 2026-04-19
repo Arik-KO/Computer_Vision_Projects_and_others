@@ -1,0 +1,10 @@
+model:
+	name: "lenet5_like"
+	in_channels : 1
+	num_classes : 10
+	dropout : 0.0
+
+	conv1_out : 6
+	conv2_out : 16
+	fc1_out : 120
+	fc2_out : 84

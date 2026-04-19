@@ -1,0 +1,21 @@
+training:
+	epochs: 20
+	batch_size : 64
+	learning_rate : 0.0001
+	optimizer: "adam"
+	weight_decay: 1.0e-4
+	early_stopping_patience: 5
+	device: 'auto'
+
+data:
+	dataset: "fashionmnist"
+	data_dir : "data/"
+	val_split: 0.1
+	num_workers : 4
+	pin_memory: true
+
+logging:
+	save_dir : "outputs/"
+	log_every_n_epochs : 1
+	save_best_model: true
+	experiement_name: ""
